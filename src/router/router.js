@@ -1,15 +1,17 @@
 import React from "react"
 import { Route } from 'react-router-dom'
-import IdeasList from '../Components/IdeasList'
-import MyIdeas from '../Components/MyIdeas'
-import Header from '../Header'
+import ManagmentsList from '../Components/ManagmentsList'
+import HomepageList from '../Components/HomepageList'
+import StatisticsList from '../Components/StatisticsList'
+import Footer from '../Footer'
 
 const ReactRouter =()=>{
 	return(
 		<React.Fragment>
-			<Header/>
-			<Route exact path="/" component={IdeasList} />
-			<Route path="/MyIdeas" component={MyIdeas} />
+			<Route exact path="/" component={ManagmentsList} />
+			<Route path="/Homepage" component={HomepageList} />
+			<Route path="/Statistics" component={StatisticsList} />
+			<Footer/>
 		</React.Fragment>
 	);}
 

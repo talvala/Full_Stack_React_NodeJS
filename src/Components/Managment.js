@@ -4,7 +4,7 @@ import MdSave from 'react-icons/lib/md/save'
 import MdEdit from 'react-icons/lib/md/edit'
 
 
-class Idea extends Component {
+class Managment extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
@@ -26,7 +26,7 @@ class Idea extends Component {
 	}
 	save(e){
 		e.preventDefault()
-		this.props.onChange(this._newIdea.value, this.props.index)
+		this.props.onChange(this._newManagment.value, this.props.index)
 		this.setState({
 			editing: false
 		})
@@ -34,28 +34,27 @@ class Idea extends Component {
 	renderForm() {
 		return(
 			<div>
-				<form onSubmit={this.save}>
-					<textarea ref={(input) => this._newIdea = input}/>
-					<button><MdSave onClick={this.save}/></button>
+				<form>
+					<textarea/>
+					<button><MdSave/></button>
 				</form>
 			</div>
 		)
 	}
 	renderUI() {
 		return (
-			<div className='idea'>
+			<div className='managment'>
 				<div>{this.props.children}</div>
 				<span>
-					<button onClick={this.edit} className="btn btn-primary" style={{marginRight: 7+'px'}}><MdEdit/></button>
-					<button onClick={this.delete} className="btn btn-primary" ><MdDelete/></button>
+				<button> <MdEdit onClick={this.edit}/></button>
+				<button> <MdDelete onClick={this.delete}/></button>
 				</span>
 			</div>
 		)
 	}
 	render() {
-		return( this.state.editing ? this.renderForm() : this.renderUI()
-		)
+		return this.state.editing ? this.renderForm(): this.renderUI()
 	}
 }
 
-export default Idea
+export default Managment
