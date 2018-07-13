@@ -86,11 +86,10 @@ class HomepageList extends Component {
 
 	eachItem1(scores,i) {
 		return (
-			<div key={'containter'+i} className="card" style={{width: 10 + 'rem', marginBottom: 7+'px', display: 'inline-block'}}>
+			<div key={'containter'+i} className="card" style={{width: 7 + 'rem', marginBottom: 7+'px', display: 'inline-block', 'text-align': 'center'}}>
 				<div className="card-body">
 					<Homepage key={'scores'+i} index={i} >
-						 <h5 className="card-title">{scores.scores}</h5>
-						 <p className="card-text">{scores.name}</p>
+						 <h5 className="card-text">{scores.name}</h5>
 						 <p className="card-text">{scores.scores} points</p>
 					</Homepage>
 				</div>
@@ -104,7 +103,7 @@ class HomepageList extends Component {
 				<div className="card-body">
 					<Homepage key={'tasks'+i} index={i} >
 						 <h5 className="card-title">{tasks.tasks}</h5>
-						 <button className="card-text" onClick={this.takeAtask(tasks._id)}>{tasks.name}</button>
+						 <button className="card-text" onClick={() =>{this.takeAtask(tasks._id)}}>{tasks.name}</button>
 					</Homepage>
 				</div>
 			</div>

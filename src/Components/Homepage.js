@@ -19,6 +19,7 @@ class Homepage extends Component {
 		)
 		return (
 			<div className='tasks'>
+			<div><p>test</p></div>
 				<div>{this.props.children}</div>
 				<span>
 				</span>

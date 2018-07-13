@@ -24,12 +24,10 @@ class ManagmentsList extends Component {
 		}))
 	}
 
-	delete(id) {
-		console.log('delete at ',id)
-		this.setState(prevState => ({
-			managments:prevState.managments.filter(managment => managment.id !== id
-				)
-		}))
+	delete(managment) {
+		fetch('https://hometaskss.herokuapp.com/tasks/'+managment._id, {
+  			method: "DELETE"
+  		})
 	}
 
 	add(name, score, timetocomplete, timeittakes,_id) {
@@ -47,6 +45,23 @@ class ManagmentsList extends Component {
 				}]
 		}))
 	}
+
+	create() {
+		fetch('https://hometaskss.herokuapp.com/createTask/', {
+  			method: "POST",
+  			body: JSON.stringify({
+   			 	name: "name",
+				scores: "0",
+				points: "0",
+				timetocomplete: "0",
+				timeittakes: "0"
+  			}),
+  			headers: {
+    			"Content-Type": "application/json; charset=UTF-8"
+  			}
+  		})
+	}
+
 	nextID() {
 		this.uniqueId = this.uniqueId || 0
 		return this.uniqueId++
@@ -72,7 +87,7 @@ class ManagmentsList extends Component {
 				<div className="card-body">
 					<Managment key={'managment'+i} index={i} 
 						onChange={this.update}
-						onDelete={this.delete}>
+						onDelete={() => {this.delete(managment)}}>
 						 <h5 className="card-title">{managment.managment}</h5>
 						 <p className="card-text">{managment.name}</p>
 						 <p className="card-text">{managment.scores} points</p>
@@ -87,7 +102,7 @@ class ManagmentsList extends Component {
 		return (
 			<div className="managmentslist">
 				{this.state.managments.map(this.eachManagment)}
-				<button onClick={this.add}
+				<button onClick={this.create}
 					id="add" className="btn btn-primary" style={{marginTop:7+'px', display: 'block'}}>
 					<MdAdd/></button>
 			</div>

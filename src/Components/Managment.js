@@ -22,7 +22,7 @@ class Managment extends Component {
 		});
 	}
 	delete(){
-		this.props.onDelete(this.props.index)
+		this.props.onDelete(this.props._id)
 	}
 	save(e){
 		e.preventDefault()
