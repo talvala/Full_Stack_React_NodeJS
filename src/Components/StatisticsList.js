@@ -97,12 +97,13 @@ class StatisticsList extends Component {
 	eachItem1(scores,i) {
 		return (
 			<div key={'containter'+i} className="card" style={{width: 10 + 'rem', marginBottom: 7+'px', display: 'inline-block'}}>
+				<div id="blokcer">
 				<div className="card-body">
 					<Statistics key={'scores'+i} index={i} >
-						 <h5 className="card-title">{scores.scores}</h5>
-						 <p className="card-text">{scores.name}</p>
+						 <p className="card-title">{scores.name}</p>
 						 <p className="card-text">{scores.scores} points</p>
 					</Statistics>
+				</div>
 				</div>
 			</div>
 			)
@@ -135,13 +136,18 @@ class StatisticsList extends Component {
 	}
 	render() {
 		return (
-		<div>
+		<div className="statisticComponent">
+			<h5 className="headTitle"> <b>WEEKLY SCORES</b> </h5>
+
+			<h5 className="title"> MOST POINTS THIS WEEK </h5>
 			<div className="scoreslist">
 				{this.state.scores.map(this.eachItem1)}
 			</div>
+      <h5 className="title"> MOST TASKS DONE SO FAR </h5>
 			<div className="taskslist">
 				{this.state.tasks.map(this.eachItem2)}
 			</div>
+      <h5 className="title"> THE MEDALIST </h5>
 			<div className="achievmentslist">
 				{this.state.medalist.map(this.eachItem3)}
 			</div>
