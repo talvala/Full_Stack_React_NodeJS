@@ -4,6 +4,7 @@ import ManagmentsList from '../Components/ManagmentsList'
 import HomepageList from '../Components/HomepageList'
 import Login from '../Components/Login'
 import StatisticsList from '../Components/StatisticsList'
+import ProfileList from '../Components/ProfileList'
 import Footer from '../Footer'
 import Header from '../Header'
 
@@ -15,6 +16,7 @@ const ReactRouter =()=>{
 			<Route exact path="/Managment" component={ManagmentsList} />
 			<Route path="/Homepage" component={HomepageList} />
 			<Route path="/Statistics" component={StatisticsList} />
+			<Route path="/Profile" component={ProfileList} />
 			<Footer/>
 		</React.Fragment>
 	);}

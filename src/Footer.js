@@ -21,7 +21,7 @@ class Footer extends Component {
 				<NavLink to="Homepage" activeStyle={this.active}>
 				Home
 				</NavLink>
-				<NavLink to="MyIdeas" activeStyle={this.active}>
+				<NavLink to="Profile" activeStyle={this.active}>
 				Profile
 				</NavLink>
 				<NavLink to="Statistics" activeStyle={this.active}>
