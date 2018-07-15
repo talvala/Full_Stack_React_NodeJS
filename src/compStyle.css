@@ -87,6 +87,9 @@ header{
     max-width:150px;
     height: 180px;
     margin-right:10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 
 }
 
@@ -129,17 +132,21 @@ header{
 
 }
 
-.scoreslist .card{
+.scoreslist .card, .taskslist .card{
     border:0;
 
 }
-#scoresImages{
+.scoresImages{
     border-radius: 50%;
     font-size: 16px;
-    height: 75px;
-    background-color: #bababa;
+    height: 70px;
+    background-color: #8f92ba;
     padding-top: 24px;
-
+    width:70px;
+    margin-left: -8px;
+    -webkit-box-shadow: 0 10px 6px 1px #777;
+    -moz-box-shadow: 0 10px 6px 1px #777;
+    box-shadow: 0 10px 9px -9px #777;
 }
 
 #userpoints h6{
@@ -157,13 +164,16 @@ header{
 .statisticComponent .scoreslist .card-body{
     border-radius: 50%;
     font-size: 10px;
-    background-color: #bababa;
+    background-color: #c7c7c7;
     padding-top: 18px;
-    height: 130px;
-    width: 130px;
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     list-style: none;
+    float:left;
+
 
 }
 
@@ -171,14 +181,128 @@ header{
     font-size: 16px;
     margin-left:0px;
     text-align: center;
-    margin-top: 15px;
+    font-weight: bold;
+}
+
+.statisticComponent .taskslist .card-text{
+    font-size: 16px;
+    margin-left:0px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.statisticComponent .scoreslist .card-text{
+    font-size: 13px;
+    text-align: center;
+    margin-top: -13px;
+
+}
+
+.statisticComponent .taskslist .card{
+    width:50px;
+}
+.statisticComponent .taskslist .card-body {
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: #8f92ba;
+    padding-top: 18px;
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    float:left;
+}
+
+.statisticComponent .scoreslist,.statisticComponent .taskslist{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.statisticComponent .taskslist .card-text,.statisticComponent .taskslist .card-points {
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top:12px;
+}
+
+.card-points{
+    padding-top: 10px;
+    position: relative;
+    left:30px;
+    margin-top:-40px;
+    color:limegreen;
     font-weight: bold;
 }
 
 
-.statisticComponent .scoreslist .card-text{
-    font-size: 16px;
-    margin-left:10px;
-    text-align: center;
-    margin-top:-10px;
+.managmentslist .card{
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
 }
+
+.managmentslist .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+footer a {
+    list-style-type: none;
+    text-decoration: none;
+
+}
+footer a:hover, footer a:visited, footer a:link, footer a:active
+{
+    text-decoration: none;
+}
+
+.managmentslist button{
+
+    margin-bottom: 40px;
+}
+
+.achievmentslist .card-body{
+
+    background-color: #3B55A0;
+}
+
+.achievmentslist .card{
+    margin-bottom:50px;
+    width: 300px;
+    background-color: #3B55A0;
+
+}
+
+.achievmentslist .card-text{
+    width:150px;
+    color:wheat;
+    margin-left: -5px;
+
+}
+
+.achievmentslist{
+    margin-bottom: 50px;
+}
+/*
+
+div[class*="gradient"]{
+    background-color: #DEB8A0;
+    box-shadow: 0 0 0 1px #a27b62;
+}
+
+.gradient-light-linear {
+    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+}
+
+.gradient-dark-linear {
+    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+}*/
