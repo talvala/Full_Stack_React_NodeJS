@@ -1,7 +1,7 @@
 {
   "name": "app2",
   "version": "0.1.0",
-  "homepage": "http://shenkar.html5-book.co.il/2017-2018/dcs/dev_193",
+  "homepage": "http://shenkar.html5-book.co.il/2017-2018/dcs/dev_183",
   "private": true,
   "dependencies": {
     "auth0-js": "^9.7.2",
