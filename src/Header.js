@@ -2,6 +2,15 @@ import React, { Component } from "react"
 import { NavLink } from "react-router-dom"
 
 class Header extends Component {
+  constructor(props){
+    super(props);
+
+    global.GmailID = '';
+    global.fullName = '';
+
+
+  }
+
 	active = {
 		fontWeight: "bold",
 		color: "red"

@@ -26,6 +26,9 @@ class Footer extends Component {
 				<NavLink exact to="/" activeStyle={this.active}>
 				Managment	
 				</NavLink>
+        <NavLink to="//hometaskss.herokuapp.com/auth/google" activeStyle={this.active}>
+          Test
+        </NavLink>
 			</div>
 
 		);
