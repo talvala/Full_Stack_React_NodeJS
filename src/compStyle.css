@@ -1,4 +1,8 @@
+*{
+    font-family: 'Open Sans', sans-serif;
 
+
+}
 footer{
     position: fixed;
     left: 0;
@@ -15,6 +19,8 @@ footer a{
 }
 
 #points{
+    font-size: 12px;
+    margin-top:3px;
 }
 
 .header{
@@ -29,13 +35,22 @@ footer a{
 }
 
 .mypoints{
-    color:green;
+    color: limegreen;
     font-weight: bold;
+    float:right;
+    font-size: 20px;
+    margin-right:-110px;
+    margin-top: -16px;
+    padding-bottom: 10px;
+
 }
 
 .header h4{
     color:grey;
-    font-size: 14px;
+    font-size: 13px;
+    margin-top: -10px;
+    padding-bottom: 7px;
+    margin-left:-150px;
 }
 
 .scoreslist{
@@ -55,8 +70,10 @@ footer a{
 
 .title{
     align-content: center;
-    margin-top: 40px;
-    margin-bottom: -40px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 13px;
 }
 
 #container{
@@ -64,10 +81,53 @@ footer a{
 
 }
 
-.taskslist .card-body{
-    background-color: #fff7a4;
+.taskslist .card{
+    background-color: #faffc7;
+    max-width:150px;
+    height: 180px;
+    margin-right:10px;
 
 }
+
+
+.taskslist .card-text
+{
+    background-color: #faffc7;
+    border:0;
+    margin-top:-20px;
+    width:110px;
+    margin-left: -17px;
+    font-size: 14px;
+    height: 160px;
+
+}
+
+button
+{
+   font-weight: bold;
+    padding-top: -90px;
+
+}
+
+
+
+.taskslist button{
+    width: 150px;
+    display: block;
+    height: 180px;
+}
+
+.taskslist .card-text{
+    width: 118px;
+    padding-bottom:90px;
+    font-size: 13px;
+}
+.taskslist h6{
+    font-size: 12px;
+    padding-top: 4px;
+
+}
+
 .scoreslist .card{
     border:0;
     width:20%;
@@ -75,7 +135,16 @@ footer a{
 }
 #scoresImages{
     border-radius: 50%;
-    padding:30px;
     font-size: 10px;
+    height: 50px;
     background-color: #bababa;
+    padding-top: 18px;
+
+}
+
+#userpoints h6{
+    color:grey;
+    font-family: 'Lato', sans-serif;
+    margin-top: -4px;
+    font-size: 12px;
 }
