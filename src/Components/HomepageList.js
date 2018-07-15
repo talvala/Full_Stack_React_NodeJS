@@ -47,11 +47,14 @@ class HomepageList extends Component {
 	}
 
 	takeAtask(id) {
+		var newObj = JSON.parse(sessionStorage.getItem('userDetails'));
+ 		var name = newObj.givenName;
+ 		console.log(name)
 		fetch('https://hometaskss.herokuapp.com/takeATask/', {
   			method: "PUT",
   			body: JSON.stringify({
    			 taskId: id,
-    		 usrName: "Mom"
+    		 usrName: name
   			}),
   			headers: {
     			"Content-Type": "application/json; charset=UTF-8"
