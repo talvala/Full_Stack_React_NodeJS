@@ -17,8 +17,10 @@ class Header extends Component {
 	header = {
 		display: "flex",
 		justifyContent: "space-evenly",
-		listStyle: "none"
-	};
+		listStyle: "none",
+    listStyleType: "none"
+
+};
 
 
 	render() {

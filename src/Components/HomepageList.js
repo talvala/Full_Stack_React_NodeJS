@@ -91,7 +91,7 @@ class HomepageList extends Component {
 			<div key={'containter'+i} className="card" style={{width: 7 + 'rem', marginBottom: 7+'px', display: 'inline-block', 'text-align': 'center'}}>
 				<div className="card-body">
 					<Homepage key={'scores'+i} index={i} >
-						 <div  id="scoresImages">{scores.name}</div>
+						 <div  className="scoresImages">{scores.name}</div>
 						<div id="myPoints"> <p className="card-text" id="points">{scores.scores} points</p></div>
 					</Homepage>
 				</div>

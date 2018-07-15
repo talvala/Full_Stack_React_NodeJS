@@ -4,12 +4,12 @@ import './compStyle.css'
 
 class Footer extends Component {
 	active = {
-		fontWeight: "bold",
 	};
 	footer = {
 		display: "flex",
 		justifyContent: "space-evenly",
-		listStyle: "none"
+		listStyleType: "none"
+
 	};
 	render() {
 		return (
