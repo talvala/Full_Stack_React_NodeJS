@@ -13,20 +13,22 @@ class Header extends Component {
 
 	active = {
 		fontWeight: "bold",
-		color: "red"
 	};
 	header = {
 		display: "flex",
 		justifyContent: "space-evenly",
 		listStyle: "none"
 	};
+
+
 	render() {
 		return (
-			<div style={this.header}>
+			<div style={this.header} className="header">
 				<NavLink to="#" activeStyle={this.active}>
-				Week day
+					<h4>num Days left</h4>
+					<h4>for this week</h4>
 				</NavLink>
-				<NavLink to="#" activeStyle={this.active}>
+				<NavLink to="#" className="mypoints" activeStyle={this.active}>
 				Points
 				</NavLink>
 			</div>

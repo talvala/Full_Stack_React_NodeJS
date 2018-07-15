@@ -21,7 +21,37 @@ class Login extends Component {
     this.navigate = this.navigate.bind(this);
   }
 
+  navigate() {
+    const query = ['user', 'admin'];
+    query.map((query) => {
+      console.log('Fetching Docs');
+      let user = JSON.parse(sessionStorage.getItem('userDetails'));
+      console.log('for user: ' + user.email);
+      const url = `https://hometaskss.herokuapp.com/${query}`;
+      let url2 = 'https://hometaskss.herokuapp.com/tasks';
 
+      fetch(url).then((res) => {
+        return res.json();
+      }).then((data) => {
+        data.map((doc) => {
+          if (doc.email == user.email) {
+            console.log('found a match!');
+            sessionStorage.setItem('userType', JSON.stringify(query));
+            sessionStorage.setItem('userPilotsDetails', JSON.stringify(doc));
+            fetch(url2).then((res) => {
+              return res.json();
+            }).then((data) => {
+              sessionStorage.setItem('projects', JSON.stringify(data));
+            });
+          }
+        })
+      }).then(() => {
+        sleep(500).then(() => {
+          (JSON.parse(sessionStorage.getItem('userType')) == 'consumer') ? this.props.history.push('/ConsumerHome') : (JSON.parse(sessionStorage.getItem('userType')) == 'producer') ? this.props.history.push('/ProducerHome') : this.props.history.push('/register')
+        })
+      })
+    });
+  }
 
   onSearch = (e) => {
     e.preventDefault();
@@ -67,22 +97,20 @@ class Login extends Component {
 
   }
 
-/*
   componentWillMount() {
     this.fetch_info()
   }
 
   fetch_info() {
      newObj = JSON.parse(sessionStorage.getItem('userDetails'));
-   /!* this.state({
+   /* this.state({
     //  googleId: newObj.googleId,
       name: newObj.name,
       email: newObj.email,
 
-    });*!/
-
+    });*/
+console.log(newObj);
   }
-*/
 
 
 /* render() {
