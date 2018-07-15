@@ -10,11 +10,7 @@ class ProfileList extends Component {
 			// saved: []
 		};
 		this.eachItem1 = this.eachItem1.bind(this)
-		// this.eachItem2 = this.eachItem2.bind(this)
-		// this.eachItem3 = this.eachItem3.bind(this)
 		this.add1 = this.add1.bind(this)
-		// this.add2 = this.add2.bind(this)
-		// this.add3 = this.add3.bind(this)
 		this.nextID = this.nextID.bind(this)
 	}
 
@@ -31,29 +27,6 @@ class ProfileList extends Component {
 				}]
 		}))
 	}
-	// add2(achievments) {
-	// 	this.setState(prevState => ({
-	// 		achievments: [
-	// 			...prevState.achievments,
-	// 			{
-	// 				// fetch('https://hometaskss.herokuapp.com/tasks/+')
-	// 				id: this.nextID(),
-	// 				achievments: achievments
-
-	// 			}]
-	// 	}))
-	// }
-	// add3(taken_tasks) {
-	// 	this.setState(prevState => ({
-	// 		saved: [
-	// 			...prevState.saved,
-	// 			{
-	// 				id: this.nextID(),
-	// 				taken_tasks: taken_tasks
-
-	// 			}]
-	// 	}))
-	// }
 	nextID() {
 		this.uniqueId = this.uniqueId || 0
 		return this.uniqueId++
@@ -73,45 +46,6 @@ class ProfileList extends Component {
  					self.add1(data1.scores, data1.achievments, data1.tasks_done);
  				})
  			})
-
- 		// fetch('https://hometaskss.herokuapp.com/getUserAchievments', {
-  	// 		method: "POST",
-  	// 		body: JSON.stringify({
-   // 			 googleId: id
-  	// 		}),
-  	// 		headers: {
-  	// 			"Accept": "application/json",
-   //  			"Content-Type": "application/json; charset=UTF-8"
-  	// 		}
-  	// 	})
- 		// .then((res2) => {
- 		// 		return res2.json();
- 		// 	})
- 		// .then((data2) => {
- 		// 		var self=this;
- 		// 		data2.map((data2) => {
- 		// 			self.add2(data2.achievments);
- 		// 		})
- 		// 	})
- 		// fetch('https://hometaskss.herokuapp.com/getUserSavedTasks', {
-  	// 		method: "POST",
-  	// 		body: JSON.stringify({
-   // 			 googleId: id
-  	// 		}),
-  	// 		headers: {
-   //  			"Content-Type": "application/json; charset=UTF-8"
-  	// 		}
-  	// 	})
- 		// .then((res3) => {
- 		// 		return res3.json();
- 		// 	})
- 		// .then((data3) => {
- 		// 		var self=this;
- 		// 		data3.map((data3) => {
-
- 		// 			self.add3(data3.tasks.taken_tasks);
- 		// 		})
- 		// 	})
  	}
 
 	eachItem1(profile,i) {
