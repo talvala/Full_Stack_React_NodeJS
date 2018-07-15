@@ -89,8 +89,8 @@ class HomepageList extends Component {
 			<div key={'containter'+i} className="card" style={{width: 7 + 'rem', marginBottom: 7+'px', display: 'inline-block', 'text-align': 'center'}}>
 				<div className="card-body">
 					<Homepage key={'scores'+i} index={i} >
-						 <h5 className="card-text">{scores.name}</h5>
-						 <p className="card-text">{scores.scores} points</p>
+						 <h5  id="scoresImages">{scores.name}</h5>
+						<div id="myPoints"> <p className="card-text" id="points">{scores.scores} points</p></div>
 					</Homepage>
 				</div>
 			</div>
@@ -111,10 +111,11 @@ class HomepageList extends Component {
 	}
 	render() {
 		return (
-		<div>
+		<div id="container">
 			<div className="scoreslist">
 				{this.state.scores.map(this.eachItem1)}
 			</div>
+			<h5 class="title"> do something right now </h5>
 			<div className="taskslist">
 				{this.state.tasks.map(this.eachItem2)}
 			</div>
