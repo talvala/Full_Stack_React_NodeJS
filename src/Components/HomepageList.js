@@ -82,6 +82,8 @@ class HomepageList extends Component {
  					self.add2(data2.name, data2._id);
  				})
  			})
+ 		// var newObj = JSON.parse(sessionStorage.getItem('userDetails'));
+ 		// console.log(newObj.googleId)
  	}
 
 	eachItem1(scores,i) {
