@@ -112,11 +112,11 @@ class HomepageList extends Component {
 	}
 	render() {
 		return (
-		<div id="container">
+		<div className="HomepageComponents">
 			<div className="scoreslist">
 				{this.state.scores.map(this.eachItem1)}
 			</div>
-			<h5 class="title"> DO SOMETHING RIGHT NOW  </h5>
+			<h5 className="title"> DO SOMETHING RIGHT NOW  </h5>
 			<div className="taskslist">
 				{this.state.tasks.map(this.eachItem2)}
 			</div>

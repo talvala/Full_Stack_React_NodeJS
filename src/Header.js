@@ -26,7 +26,7 @@ class Header extends Component {
 			<div style={this.header} className="header">
 				<NavLink to="#" activeStyle={this.active}>
 					<h4><b>3 Days left</b></h4>
-					 <h4> &nbsp;&nbsp;&nbsp;&nbsp; for this week</h4>
+					 <h4> for this week</h4>
 				</NavLink>
 				<NavLink  id="userpoints" to="#" className="mypoints" activeStyle={this.active}>
 				87

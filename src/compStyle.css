@@ -3,12 +3,16 @@
 
 
 }
+
+
+
 footer{
     position: fixed;
     left: 0;
     bottom: 0;
-    margin-bottom: 46px;
     width: 100%;
+    padding-top:20px;
+    padding-bottom: 20px;
     background-color: #ffffff;
     color: #8f2610;
     text-align: center;
@@ -23,7 +27,7 @@ footer a{
     margin-top:3px;
 }
 
-.header{
+header{
     position: fixed;
     left: 0;
     top: 0;
@@ -50,18 +54,18 @@ footer a{
     font-size: 13px;
     margin-top: -10px;
     padding-bottom: 7px;
-    margin-left:-150px;
+    margin-left:-130px;
 }
 
-.scoreslist{
-    margin-top:60px;
+.HomepageComponents .scoreslist{
+    margin-top:20px;
     display: flex;
     justify-content: flex-start;
     list-style: none;
 
 }
 
-.taskslist{
+.HomepageComponents .taskslist{
     display: flex;
     justify-content: flex-start;
     list-style: none;
@@ -70,18 +74,15 @@ footer a{
 
 .title{
     align-content: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 13px;
 }
 
-#container{
 
 
-}
-
-.taskslist .card{
+.HomepageComponents .taskslist .card{
     background-color: #faffc7;
     max-width:150px;
     height: 180px;
@@ -90,7 +91,7 @@ footer a{
 }
 
 
-.taskslist .card-text
+.HomepageComponents .taskslist .card-text
 {
     background-color: #faffc7;
     border:0;
@@ -102,27 +103,27 @@ footer a{
 
 }
 
-button
+.HomepageComponents .taskslist  button
 {
-   font-weight: bold;
+    font-weight: bold;
     padding-top: -90px;
 
 }
 
 
 
-.taskslist button{
+.HomepageComponents .taskslist button{
     width: 150px;
     display: block;
     height: 180px;
 }
 
-.taskslist .card-text{
+.HomepageComponents .taskslist .card-text{
     width: 118px;
     padding-bottom:90px;
     font-size: 13px;
 }
-.taskslist h6{
+.HomepageComponents .taskslist h6{
     font-size: 12px;
     padding-top: 4px;
 
@@ -130,15 +131,14 @@ button
 
 .scoreslist .card{
     border:0;
-    width:20%;
 
 }
 #scoresImages{
     border-radius: 50%;
-    font-size: 10px;
-    height: 50px;
+    font-size: 16px;
+    height: 75px;
     background-color: #bababa;
-    padding-top: 18px;
+    padding-top: 24px;
 
 }
 
@@ -147,4 +147,38 @@ button
     font-family: 'Lato', sans-serif;
     margin-top: -4px;
     font-size: 12px;
+}
+
+.statisticComponent{
+    margin-top:13px;
+}
+
+
+.statisticComponent .scoreslist .card-body{
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: #bababa;
+    padding-top: 18px;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+.statisticComponent .scoreslist .card-title{
+    font-size: 16px;
+    margin-left:0px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+.statisticComponent .scoreslist .card-text{
+    font-size: 16px;
+    margin-left:10px;
+    text-align: center;
+    margin-top:-10px;
 }
