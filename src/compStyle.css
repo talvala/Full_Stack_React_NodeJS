@@ -16,6 +16,7 @@ footer{
     background-color: #ffffff;
     color: #8f2610;
     text-align: center;
+    margin-top: 20px;
 }
 
 footer a{
@@ -76,7 +77,7 @@ header{
     align-content: center;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 13px;
 }
 
@@ -222,7 +223,7 @@ header{
     justify-content: flex-start;
     list-style: none;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -238,7 +239,7 @@ header{
     padding-top: 10px;
     position: relative;
     left:30px;
-    margin-top:-40px;
+    margin-top:-30px;
     color:limegreen;
     font-weight: bold;
 }
@@ -306,3 +307,88 @@ div[class*="gradient"]{
 .gradient-dark-linear {
     background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
 }*/
+
+.HomepageComponents .scoreslist{
+    width: 280px;
+    height: 200px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: none;
+    margin-left: 20px;
+}
+.HomepageComponents .taskslist{
+    width: 380px;
+    height: 200px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 120px;
+    border: none;
+    padding-bottom: 220px;
+}
+
+.scoreslist .scoresImages{
+}
+
+ .HomepageComponents .title{
+    margin-bottom: 220px;
+     position:absolute;
+}
+.statisticComponent .title .headTitle{
+     margin-bottom: 120px;
+     position:absolute;
+ }
+
+.statisticComponent .scoreslist{
+    width: 380px;
+    height: 200px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+
+.statisticComponent  .taskslist{
+    width: 380px;
+    height: 200px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+
+
+
+.statisticComponent  .achievmentslist{
+    width: 380px;
+    height: 200px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: none;
+}
+

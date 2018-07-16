@@ -88,6 +88,7 @@ class HomepageList extends Component {
 
 	eachItem1(scores,i) {
 		return (
+			<div id="wrapper">
 			<div key={'containter'+i} className="card" style={{width: 7 + 'rem', marginBottom: 7+'px', display: 'inline-block', 'text-align': 'center'}}>
 				<div className="card-body">
 					<Homepage key={'scores'+i} index={i} >
@@ -95,6 +96,7 @@ class HomepageList extends Component {
 						<div id="myPoints"> <p className="card-text" id="points">{scores.scores} points</p></div>
 					</Homepage>
 				</div>
+			</div>
 			</div>
 			)
 	}

@@ -37,17 +37,16 @@ class Login extends Component {
           if (doc.email == user.email) {
             console.log('found a match!');
             sessionStorage.setItem('userType', JSON.stringify(query));
-            sessionStorage.setItem('userPilotsDetails', JSON.stringify(doc));
             fetch(url2).then((res) => {
               return res.json();
             }).then((data) => {
-              sessionStorage.setItem('projects', JSON.stringify(data));
+              sessionStorage.setItem('tasks', JSON.stringify(data));
             });
           }
         })
       }).then(() => {
         sleep(500).then(() => {
-          (JSON.parse(sessionStorage.getItem('userType')) == 'consumer') ? this.props.history.push('/ConsumerHome') : (JSON.parse(sessionStorage.getItem('userType')) == 'producer') ? this.props.history.push('/ProducerHome') : this.props.history.push('/register')
+          (JSON.parse(sessionStorage.getItem('userType')) == 'user') ? this.props.history.push('/Profile') : (JSON.parse(sessionStorage.getItem('userType')) == 'admin') ? this.props.history.push('/Managment') : this.props.history.push('/register')
         })
       })
     });

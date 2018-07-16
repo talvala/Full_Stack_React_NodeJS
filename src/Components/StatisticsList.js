@@ -96,6 +96,8 @@ class StatisticsList extends Component {
 
 	eachItem1(scores,i) {
 		return (
+      <div id="wrapper">
+
 			<div key={'containter'+i} className="card" style={{width: 10 + 'rem', marginBottom: 7+'px', display: 'inline-block'}}>
 				<div id="blokcer">
 				<div className="card-body">
@@ -105,6 +107,7 @@ class StatisticsList extends Component {
 					</Statistics>
 				</div>
 				</div>
+      </div>
 			</div>
 			)
 	}
