@@ -17,20 +17,6 @@ class Profile extends Component {
 				</span>
 			</div>
 		)
-		return (
-			<div className='completed'>
-				<div>{this.props.children}</div>
-				<span>
-				</span>
-			</div>
-		)
-		return (
-			<div className='saved'>
-				<div>{this.props.children}</div>
-				<span>
-				</span>
-			</div>
-		)
 	}
 }
 
